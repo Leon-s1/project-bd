@@ -7,8 +7,8 @@ function App() {
     <>
       <h1>Привет мир!</h1>
       <Header />
-      <label></label>
-      <input></input>
+      <label>sfsfs</label>
+      <input>sfsff</input>
     </>
   )
 }
