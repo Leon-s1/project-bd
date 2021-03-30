@@ -6,17 +6,20 @@
     "@testing-library/jest-dom": "^5.11.10",
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.8.3",
+    "bootstrap": "^4.6.0",
     "express": "^4.17.1",
     "express-handlebars": "^5.2.1",
     "mongoose": "^5.12.2",
     "react": "^17.0.2",
+    "react-bootstrap": "^1.5.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
     "web-vitals": "^1.1.1"
   },
   "scripts": {
-    "start": "node index",
+    "startt": "node index",
     "dev": "nodemon index",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
