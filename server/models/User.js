@@ -7,4 +7,4 @@ const User = new Schema({
   adress: { type: String, require: true },
 })
 
-module.exports = model((this.name: 'User'), User)
+module.exports = model('User', User)
