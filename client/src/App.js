@@ -7,6 +7,8 @@ function App() {
       <div>Happy hucking!</div>
       <AddUser />
         <p> </>
+        const a =42
+
     </>
   )
 }
