@@ -1,8 +1,10 @@
 const express = require('express') //фреймворк для разработке веб на node.js
 const mongoose = require('mongoose') //библиотека для работы с БД mongodb
-const config = require('config')
+const config = require('./config/default.json')
 const addUser = require('./routes/addUser')
-const PORT = config.get('serverPort')
+const PORT = 3000
+// const PORT = config.get('serverPort')
+
 
 const app = express() //создаем сервер
 
@@ -18,10 +20,11 @@ const start = async () => {
   try {
     // Подключаем базу
     await mongoose.connect(
-      config.get('dbUrl', {
+      // config.get('mongodb+srv://sergey:1q2w3e@cluster0.suv9b.mongodb.net/Database?retryWrites=true&w=majority', {
+        'mongodb+srv://sergey:1q2w3e@cluster0.suv9b.mongodb.net/Database?retryWrites=true&w=majority', {
         useNewUrlParser: true,
         useUnifiedTopology: true,
-      })
+      }
     )
     //Запускаем сервер
     require('./app/routes')(app, {})
